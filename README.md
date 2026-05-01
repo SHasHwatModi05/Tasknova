@@ -1,9 +1,7 @@
 # 🚀 Team Task Manager
 
-A modern **full-stack task management system** built using **Next.js (App Router)**, **MongoDB**, and **Tailwind CSS**.  
-It helps teams efficiently manage projects, assign tasks, and track progress with **role-based access control**.
-
----
+An end-to-end task and project management application that enables teams to efficiently organize workflows, assign responsibilities, and monitor progress.
+Developed with Next.js, MongoDB, and Tailwind CSS, featuring secure authentication and role-based access control.
 
 ## 🌐 Live Demo  
 👉 https://team-task-manager-production-11ac.up.railway.app/
@@ -149,4 +147,3 @@ Railway will automatically build and deploy your app.
 
 ---
 
- + Cloud Enthusiast

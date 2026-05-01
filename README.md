@@ -1,76 +1,152 @@
+# 🚀 Team Task Manager
 
+A modern **full-stack task management system** built using **Next.js (App Router)**, **MongoDB**, and **Tailwind CSS**.  
+It helps teams efficiently manage projects, assign tasks, and track progress with **role-based access control**.
 
-# Team Task Manager
+---
 
-A full-stack, role-based task management web application built with **Next.js (App Router)**, **Tailwind CSS**, and **MongoDB**.
-
-🌐 Live Demo
-
+## 🌐 Live Demo  
 👉 https://team-task-manager-production-11ac.up.railway.app/
 
-## Features
+---
 
-- **Authentication**: JWT-based login and registration.
-- **Role-based Access Control**: 
-  - **Admins**: Can create projects, create tasks, assign tasks to members, and delete tasks/projects.
-  - **Members**: Can view their assigned tasks and update their task status (To Do -> In Progress -> Done).
-- **Projects**: Group tasks logically by projects.
-- **Tasks Dashboard**: Visual status tracking and simple updates.
-- **Beautiful UI**: Modern, glassmorphism design with Tailwind CSS and Lucide React icons.
+## 📌 Overview
 
-## Local Development
+Team Task Manager simplifies collaboration between admins and team members by providing a structured workflow:
 
-### 1. Install Dependencies
+- Admins manage projects and assign tasks  
+- Members track and update their work progress  
+- Tasks are organized and monitored efficiently  
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication & Security
+- JWT-based authentication
+- Secure login & registration
+- Protected routes and APIs
+
+### 👥 Role-Based Access Control
+- **Admin**
+  - Create & manage projects
+  - Assign tasks to members
+  - Delete tasks/projects
+- **Member**
+  - View assigned tasks
+  - Update task status
+
+### 📁 Project Management
+- Organize tasks within projects
+- Better workflow separation
+
+### 📊 Task Workflow
+- Status tracking:
+  - 🟡 To Do  
+  - 🔵 In Progress  
+  - 🟢 Done  
+- Real-time updates
+
+### 🎨 UI/UX
+- Clean and modern interface
+- Glassmorphism design
+- Responsive layout
+- Built with Tailwind CSS & Lucide Icons
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technology |
+|----------------|-----------|
+| Frontend       | Next.js 15, React 19 |
+| Styling        | Tailwind CSS v4 |
+| Backend        | Next.js API Routes |
+| Database       | MongoDB (Mongoose) |
+| Auth           | JWT (jsonwebtoken) |
+| State Mgmt     | Zustand |
+| Icons          | Lucide React |
+
+---
+
+## 📂 Project Structure
+
+```bash
+team-task-manager/
+│
+├── app/                     # Next.js App Router
+│   ├── (auth)/              # Authentication pages
+│   ├── dashboard/           # Dashboard UI
+│   ├── api/                 # Backend APIs
+│   │   ├── auth/
+│   │   ├── projects/
+│   │   └── tasks/
+│   └── layout.js
+│
+├── components/              # UI components
+├── lib/                     # Config & utilities
+├── models/                  # Mongoose models
+├── store/                   # Zustand store
+├── styles/                  # Global styles
+├── public/                  # Static assets
+│
+├── .env.local
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Local Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/team-task-manager.git
+cd team-task-manager
+```
+
+### 2️⃣ Install Dependencies
 ```bash
 npm install
 ```
 
-### 2. Environment Variables
-Create a `.env.local` file in the root directory and add the following variables:
-```env
-# Your MongoDB connection string
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/team-task-manager?retryWrites=true&w=majority
+### 3️⃣ Setup Environment Variables
+Create `.env.local` file:
 
-# Secret for JWT signing
-JWT_SECRET=supersecretjwtkey_please_change_this
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 ```
 
-### 3. Run the Development Server
+### 4️⃣ Run Development Server
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open 👉 http://localhost:3000
 
-## Deploying to Railway (Mandatory Assignment Step)
+---
 
-1. **Push your code to GitHub**.
-   - Create a new repository on GitHub.
-   - Run:
-     ```bash
-     git add .
-     git commit -m "Initial commit"
-     git branch -M main
-     git remote add origin https://github.com/your-username/your-repo.git
-     git push -u origin main
-     ```
+## 🚀 Deployment (Railway)
 
-2. **Deploy on Railway**:
-   - Go to [Railway.app](https://railway.app/).
-   - Click **New Project** -> **Deploy from GitHub repo**.
-   - Select the repository you just created.
-   - Click **Add a Database** -> **MongoDB**.
-   - Once MongoDB is provisioned, go to your Next.js application's **Variables** settings in Railway.
-   - Add the following Environment Variables:
-     - `MONGODB_URI`: (Copy the connection URL from your Railway MongoDB service).
-     - `JWT_SECRET`: (Set to any random secret string).
-   - Railway will automatically detect Next.js, install dependencies, run `npm run build`, and start the app!
+### Step 1: Push Code
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
 
-## Tech Stack
-- Next.js 15
-- React 19
-- Tailwind CSS v4
-- MongoDB (Mongoose)
-- JWT (jsonwebtoken)
-- Zustand (State management)
-- Lucide React (Icons)
+### Step 2: Deploy
+1. Go to https://railway.app  
+2. New Project → Deploy from GitHub  
+3. Select your repo  
+4. Add MongoDB  
+5. Add environment variables:
+   - `MONGODB_URI`
+   - `JWT_SECRET`
+
+Railway will automatically build and deploy your app.
+
+---
+
+ + Cloud Enthusiast

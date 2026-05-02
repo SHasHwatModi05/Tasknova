@@ -4,7 +4,7 @@ An end-to-end task and project management application that enables teams to effi
 Developed with Next.js, MongoDB, and Tailwind CSS, featuring secure authentication and role-based access control.
 
 ## 🌐 Live Demo  
-👉 https://team-task-manager-production-11ac.up.railway.app/
+👉 tasknova-production-32c5.up.railway.app
 
 ---
 

@@ -1,10 +1,42 @@
 # 🚀 Tasknova
 
-An end-to-end task and project management application that enables teams to efficiently organize workflows, assign responsibilities, and monitor progress.
+An end-to-end task and project management application that enables teams to efficiently organize workflows, assign responsibilities, and monitor progress.  
 Developed with Next.js, MongoDB, and Tailwind CSS, featuring secure authentication and role-based access control.
 
 ## 🌐 Live Demo  
 👉 https://tasknova-production-32c5.up.railway.app/
+
+---
+
+## 🧪 Demo Credentials
+
+You can explore **Tasknova** using the demo accounts below:
+
+### 👨‍💼 Admin Access
+- **Email:** demo@work  
+- **Password:** 1234  
+
+👉 Use this account to:
+- Create projects  
+- Assign tasks  
+- Manage team members  
+
+---
+
+### 👤 Member Access
+- **Email:** demo@member  
+- **Password:** 1234  
+
+👉 Use this account to:
+- View assigned tasks  
+- Update task status  
+- Track progress  
+
+---
+
+## ⚠️ Note
+- These are public demo accounts — avoid storing sensitive data  
+- Data may reset periodically  
 
 ---
 
@@ -21,35 +53,35 @@ Tasknova simplifies collaboration between admins and team members by providing a
 ## ✨ Key Features
 
 ### 🔐 Authentication & Security
-- JWT-based authentication
-- Secure login & registration
-- Protected routes and APIs
+- JWT-based authentication  
+- Secure login & registration  
+- Protected routes and APIs  
 
 ### 👥 Role-Based Access Control
 - **Admin**
-  - Create & manage projects
-  - Assign tasks to members
-  - Delete tasks/projects
+  - Create & manage projects  
+  - Assign tasks to members  
+  - Delete tasks/projects  
 - **Member**
-  - View assigned tasks
-  - Update task status
+  - View assigned tasks  
+  - Update task status  
 
 ### 📁 Project Management
-- Organize tasks within projects
-- Better workflow separation
+- Organize tasks within projects  
+- Better workflow separation  
 
 ### 📊 Task Workflow
 - Status tracking:
   - 🟡 To Do  
   - 🔵 In Progress  
   - 🟢 Done  
-- Real-time updates
+- Real-time updates  
 
 ### 🎨 UI/UX
-- Clean and modern interface
-- Glassmorphism design
-- Responsive layout
-- Built with Tailwind CSS & Lucide Icons
+- Clean and modern interface  
+- Glassmorphism design  
+- Responsive layout  
+- Built with Tailwind CSS & Lucide Icons  
 
 ---
 
@@ -91,7 +123,6 @@ team-task-manager/
 ├── .env.local
 ├── package.json
 └── README.md
-```
 
 ---
 
